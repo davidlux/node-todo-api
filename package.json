@@ -1,0 +1,15 @@
+{
+  "name": "node-todo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-mongodb": "\"C:\\Program Files\\MongoDB\\Server\\3.4\\bin\\mongod.exe\" --dbpath \"C:\\Users\\Dave\\Google Drive\\05 coding\\mongodata\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.5"
+  }
+}
