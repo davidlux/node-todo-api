@@ -60,15 +60,38 @@ MongoClient.connect(url, (err, db) => {
   //   completed: false
   // }).then(result => console.log(result));
 
-  db.collection('Users').deleteOne({
-    _id: ObjectID("592ca87074ca9d0de4521c5c")
-  }).then(result => console.log(result))
+  // db.collection('Users').deleteOne({
+  //   _id: ObjectID("592ca87074ca9d0de4521c5c")
+  // }).then(result => console.log(result))
+  //
+  // db.collection('Users').deleteMany({
+  //   name: 'David Lux'
+  // }).then(result => console.log(result))
 
-  db.collection('Users').deleteMany({
-    name: 'David Lux'
-  }).then(result => console.log(result))
+
+  // db.collection('Todos').findOneAndUpdate({
+  //   _id: new ObjectID('59372b39b02efc1ff072c7d9')
+  // }, {
+  //   $set: {
+  //     completed: true
+  //     }
+  //   }, {
+  //     returnOriginal: false
+  //   }).then(result => console.log(result));
 
 
+  db.collection('Users').findOneAndUpdate({
+    name: 'Mike'
+  }, {
+    $set: {
+      name: 'Dave'
+    },
+    $inc: {
+      age: 1
+    }
+  }, {
+    returnOriginal: false
+  }).then(result => console.log(result));
 
 
 
