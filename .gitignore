@@ -1,2 +1,6 @@
 *.log
-npm_modules
+node_modules
+npm-cache
+.eslintrc.json
+mongodb-start.bat
+playground
